@@ -1,0 +1,347 @@
+<header></header>
+<div class="homepage" ng-controller="homeController" id="slides_control">
+    <div class="container-fluid padding-none">
+        <!-- <div class="scroll-left">
+             <h1>Welcome to Narsingole</h1>
+         </div>-->
+        <div class="h-carousel">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}">
+
+                    <!--<div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>-->
+                </slide>
+            </carousel>
+        </div>
+        <div class="overlay">
+            <h3 class="title">Welcome to Narsingole!</h3>
+            <span class="sub-title"><b>Here &nbsp;</b></span>
+            <typed class="type-box"
+                   start-timeout="1500"
+                   type-speed="80"
+                   back-speed="20"
+                   cursor="true"
+                   type-strings="[
+                '<u><b class=typed>you can see the latest events in village</b></u>',
+                '<u><b class=typed>you can also update the events by authentication</b></u>',
+                '<u><b class=typed>you will find the recent news in village</b></u>',
+                '<u><b class=typed>login and signup only for Narsingole people</b></u>',
+                '<u><b class=typed>You can chat with your friends</b></u>'
+            ]"
+                   html-mode loop>
+            </typed>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-body" style="border: 1px solid #eee;">
+                    <div class="col-md-8">
+                        <h3><strong>Welcome</strong></h3>
+
+                        <p> Welcome to Narsingole Village website. Here you will find out what is going on in the
+                            village as
+                            well as information
+                            on its history, people and places of interest.</p>
+
+                        <p> Its a famous village for the temple saneswaralayam the temple prathista by agastyamahamuni
+                            in ap
+                            this is the first temple for saneswara the swami pooja helps to relief from astama
+                            ardhastama
+                            elininati saneswaraswami doshams
+                            and ramalingeswaralayam and paarvathi matha temples also here prasannajaneya temple and
+                            chennakesava temple
+                            from before 48 years onwards the temples organised by sri jandyala chandrabhaskara
+                            sastry(astrologer)</p>
+
+                        <p>Narisingolu is a Village in Zarugumilli Mandal in Prakasam District of Andhra Pradesh State,
+                            India.
+                            It belongs to Andhra region</p>
+
+                        <p>It is located 32 KM towards South from District head quarters Ongole. 7 KM from Zarugumalli.
+                            321 KM from State capital Hyderabad </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><strong>Locate Us</strong></h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7696.246292743508!2d79.8819136245064!3d15.315541357401347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b11b29009fccd%3A0xb300836bd1526977!2sNarsingolu%2C+Andhra+Pradesh+523271!5e0!3m2!1sen!2sin!4v1493230091542"
+                                width="366" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-body" style="border: 1px solid #eee;">
+                    <div class="col-md-5">
+                        <h3><strong>Latest News</strong></h3>
+                        <ul ticker timing="3000" style="list-style: none;padding-left: 0">
+                            <li class="home-ticker" ng-repeat="item in myTickerItems">
+                                <span><i class="fa fa-hand-o-right"></i></span>&nbsp;&nbsp;&nbsp;&nbsp; {{item.copy}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3><strong>Information</strong></h3>
+
+                        <p><strong class="text-blue ">Mandal Name: </strong><span>Zarugumalli</span></p>
+
+                        <p><strong class="text-blue ">District: </strong><span>Prakasam</span></p>
+
+                        <p><strong class="text-blue ">State: </strong><span>Andhra pradesh</span></p>
+
+                        <p><strong class="text-blue ">Region: </strong><span>Andhra</span></p>
+
+                        <p><strong class="text-blue ">Telephone Code / Std Code: </strong><span>08599 </span></p>
+
+                        <p><strong class="text-blue ">Serpanch Name: </strong><span>Koteswara rao</span></p>
+
+                        <p><strong class="text-blue">Pincode: </strong><span>523271</span></p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3><strong>Weather Report</strong></h3>
+                        <!-- weather widget start -->
+                        <div id="m-booked-bl-simple-week-vertical-42980">
+                            <div class="booked-wzs-160-275 weather-customize"
+                                 style="background-color:#137AE9; width:350px;" id="width4 ">
+                                <a target="_blank" class="booked-wzs-top-160-275" href="http://www.booked.net/"><img
+                                        src="//s.bookcdn.com/images/letter/s5.gif" alt="Booked"/></a>
+
+                                <div class="booked-wzs-160-275_in">
+                                    <div class="booked-wzs-160-275-data">
+                                        <div class="booked-wzs-160-275-left-img wrz-01"></div>
+                                        <div class="booked-wzs-160-275-right">
+                                            <div class="booked-wzs-day-deck">
+                                                <div class="booked-wzs-day-val">
+                                                    <div class="booked-wzs-day-number"><span class="plus">+</span>42
+                                                    </div>
+                                                    <div class="booked-wzs-day-dergee">
+                                                        <div class="booked-wzs-day-dergee-val">&deg;</div>
+                                                        <div class="booked-wzs-day-dergee-name">C</div>
+                                                    </div>
+                                                </div>
+                                                <div class="booked-wzs-day">
+                                                    <div class="booked-wzs-day-d"><span class="plus">+</span>43&deg;
+                                                    </div>
+                                                    <div class="booked-wzs-day-n"><span class="plus">+</span>27&deg;
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="booked-wzs-160-275-info">
+                                                <div class="booked-wzs-160-275-city">Ongole</div>
+                                                <div class="booked-wzs-160-275-date">Friday, 28</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a target="_blank" href="http://www.booked.net/weather/ongole-w648256"
+                                       class="booked-wzs-bottom-160-275">
+                                        <table cellpadding="0" cellspacing="0" class="booked-wzs-table-160">
+                                            <tr>
+                                                <td class="week-day"><span class="week-day-txt">Saturday</span></td>
+                                                <td class="week-day-ico">
+                                                    <div class="wrz-sml wrzs-01"></div>
+                                                </td>
+                                                <td class="week-day-val"><span class="plus">+</span>39&deg;</td>
+                                                <td class="week-day-val"><span class="plus">+</span>24&deg;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="week-day"><span class="week-day-txt">Sunday</span></td>
+                                                <td class="week-day-ico">
+                                                    <div class="wrz-sml wrzs-01"></div>
+                                                </td>
+                                                <td class="week-day-val"><span class="plus">+</span>38&deg;</td>
+                                                <td class="week-day-val"><span class="plus">+</span>24&deg;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="week-day"><span class="week-day-txt">Monday</span></td>
+                                                <td class="week-day-ico">
+                                                    <div class="wrz-sml wrzs-01"></div>
+                                                </td>
+                                                <td class="week-day-val">
+                                                    <span class="plus">+</span>36&deg;</td>
+                                                <td class="week-day-val"><span class="plus">+</span>24&deg;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="week-day"><span class="week-day-txt">Tuesday</span></td>
+                                                <td class="week-day-ico">
+                                                    <div class="wrz-sml wrzs-01"></div>
+                                                </td>
+                                                <td class="week-day-val"><span class="plus">+</span>37&deg;</td>
+                                                <td class="week-day-val"><span class="plus">+</span>25&deg;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="week-day"><span class="week-day-txt">Wednesday</span></td>
+                                                <td class="week-day-ico">
+                                                    <div class="wrz-sml wrzs-01"></div>
+                                                </td>
+                                                <td class="week-day-val"><span class="plus">+</span>37&deg;</td>
+                                                <td class="week-day-val"><span class="plus">+</span>25&deg;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="week-day"><span class="week-day-txt">Thursday</span></td>
+                                                <td class="week-day-ico">
+                                                    <div class="wrz-sml wrzs-01"></div>
+                                                </td>
+                                                <td class="week-day-val"><span class="plus">+</span>38&deg;</td>
+                                                <td class="week-day-val"><span class="plus">+</span>26&deg;</td>
+                                            </tr>
+                                        </table>
+                                        <div class="booked-wzs-center"><span class="booked-wzs-bottom-l">See 7-Day Forecast</span>
+                                        </div>
+                                    </a></div>
+                            </div>
+                            <script type="text/javascript"> var css_file = document.createElement("link");
+                            css_file.setAttribute("rel", "stylesheet");
+                            css_file.setAttribute("type", "text/css");
+                            css_file.setAttribute("href", 'https://s.bookcdn.com/css/w/booked-wzs-widget-160x275.css?v=0.0.1');
+                            document.getElementsByTagName("head")[0].appendChild(css_file);
+                            function setWidgetData(data) {
+                                if (typeof(data) != 'undefined' && data.results.length > 0) {
+                                    for (var i = 0; i < data.results.length; ++i) {
+                                        var objMainBlock = document.getElementById('m-booked-bl-simple-week-vertical-42980');
+                                        if (objMainBlock !== null) {
+                                            var copyBlock = document.getElementById('m-bookew-weather-copy-' + data.results[i].widget_type);
+                                            objMainBlock.innerHTML = data.results[i].html_code;
+                                            if (copyBlock !== null) objMainBlock.appendChild(copyBlock);
+                                        }
+                                    }
+                                } else {
+                                    alert('data=undefined||data.results is empty');
+                                }
+                            } </script>
+                            <script type="text/javascript" charset="UTF-8"
+                                    src="https://widgets.booked.net/weather/info?action=get_weather_info&ver=6&cityID=w648256&type=4&scode=124&ltid=3458&domid=w209&anc_id=72204&cmetric=1&wlangID=1&color=137AE9&wwidth=350&header_color=ffffff&text_color=333333&link_color=08488D&border_form=1&footer_color=ffffff&footer_text_color=333333&transparent=0"></script>
+                            <!-- weather widget end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <h2 class="sights-heading">
+                Sights in Narsingole
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 blog-list padding-none">
+                <div class="panel-body">
+                    <article class="post col-md-4 col-sm-6 col-xs-12">
+                        <figure class="post-thumb">
+                            <a><img class="img-responsive"
+                                    src="http://themes.3rdwavemedia.com/velocity/assets/images/blog/post-1-thumb.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="content">
+                            <h3 class="post-title"><a>Ideas are easy, execution is hard</a></h3>
+
+                            <div class="post-entry">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis mattis
+                                    erat, dictum facilisis magna posuere ac. Curabitur consectetur magna mauris, et
+                                    aliquam lectus ornare nec.</p>
+                                <a class="read-more">Read more <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post col-md-4 col-sm-6 col-xs-12">
+                        <figure class="post-thumb">
+                            <a><img class="img-responsive"
+                                    src="http://themes.3rdwavemedia.com/velocity/assets/images/blog/post-1-thumb.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="content">
+                            <h3 class="post-title"><a>Done is better than perfect</a></h3>
+
+                            <div class="post-entry">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis mattis
+                                    erat, dictum facilisis magna posuere ac. Curabitur consectetur magna mauris, et
+                                    aliquam lectus ornare nec.</p>
+                                <a class="read-more">Read more <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post col-md-4 col-sm-6 col-xs-12">
+                        <figure class="post-thumb">
+                            <a><img class="img-responsive"
+                                    src="http://themes.3rdwavemedia.com/velocity/assets/images/blog/post-1-thumb.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="content">
+                            <h3 class="post-title"><a>The value of an idea lies in the using of it</a></h3>
+
+                            <div class="post-entry">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis mattis
+                                    erat, dictum facilisis magna posuere ac. Curabitur consectetur magna mauris, et
+                                    aliquam lectus ornare nec.</p>
+                                <a class="read-more">Read more <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 blog-list padding-none">
+                <div class="panel-body">
+                    <article class="post col-md-4 col-sm-6 col-xs-12">
+                        <figure class="post-thumb">
+                            <a><img class="img-responsive"
+                                    src="http://themes.3rdwavemedia.com/velocity/assets/images/blog/post-1-thumb.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="content">
+                            <h3 class="post-title"><a>You can do big things with a small team</a></h3>
+
+                            <div class="post-entry">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis mattis
+                                    erat, dictum facilisis magna posuere ac. Curabitur consectetur magna mauris, et
+                                    aliquam lectus ornare nec.</p>
+                                <a class="read-more">Read more <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post col-md-4 col-sm-6 col-xs-12">
+                        <figure class="post-thumb">
+                            <a><img class="img-responsive"
+                                    src="http://themes.3rdwavemedia.com/velocity/assets/images/blog/post-1-thumb.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="content">
+                            <h3 class="post-title"><a>Good design is good business</a></h3>
+
+                            <div class="post-entry">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis mattis
+                                    erat, dictum facilisis magna posuere ac. Curabitur consectetur magna mauris, et
+                                    aliquam lectus ornare nec.</p>
+                                <a class="read-more">Read more <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="post col-md-4 col-sm-6 col-xs-12">
+                        <figure class="post-thumb">
+                            <a><img class="img-responsive"
+                                    src="http://themes.3rdwavemedia.com/velocity/assets/images/blog/post-1-thumb.jpg"
+                                    alt=""></a>
+                        </figure>
+                        <div class="content">
+                            <h3 class="post-title"><a>Don't try to be original, just try to be good</a></h3>
+
+                            <div class="post-entry">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lobortis mattis
+                                    erat, dictum facilisis magna posuere ac. Curabitur consectetur magna mauris, et
+                                    aliquam lectus ornare nec.</p>
+                                <a class="read-more">Read more <i class="fa fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<footer></footer>
+<scroll-on-click></scroll-on-click>
